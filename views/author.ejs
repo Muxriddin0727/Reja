@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1_1">
+              <img
+                src="/public/images/profile.png"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+            <div class="left_1_2"><%=user.name %></div>
+            <div class="left_1_3"><%=user.profession %></div>
+            <div class="left_icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="icon_1" src="icon/facebook.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="icon_1" src="icon/instagram.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="icon_1" src="icon/twitter.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="icon_1" src="icon/linkeding.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="icon_1" src="icon/youtube.svg" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="icon_1" src="icon/dribbble.svg" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="left_2_1">
+              <p class="left_2_1_title">Age:</p>
+              <p><%=user.age %></p>
+            </div>
+            <div class="left_2_1">
+              <p class="left_2_1_title">Residence:</p>
+              <p><%=user.residence %></p>
+            </div>
+            <div class="left_2_1">
+              <p class="left_2_1_title">Freelance:</p>
+              <p class="available">Available</p>
+            </div>
+            <div class="left_2_1">
+              <p class="left_2_1_title">Address:</p>
+              <p><%=user.address %></p>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <!-- LANGUAGES -->
+          <div class="left_3">
+            <p class="left_3_title">Languages</p>
+            <div class="left_3_1">
+              <p><%=user.languages[0] %></p>
+              <p>100%</p>
+            </div>
+            <div class="border_line"></div>
+            <div class="left_3_1">
+              <p><%=user.languages[1] %></p>
+              <p>80%</p>
+            </div>
+            <div class="border_line_2">
+              <div class="html_skills"></div>
+            </div>
+            <div class="left_3_1">
+              <p><%=user.languages[2] %></p>
+              <p>60%</p>
+            </div>
+            <div class="border_line_3">
+              <div class="html_skills2"></div>
+            </div>
+          </div>
+          <!-- END LANGUAGES -->
+          <div class="marginer"></div>
+          <!-- SKILLS -->
+          <div class="left_4">
+            <p class="left_3_title">Skills</p>
+            <div class="left_3_1">
+              <p><%=user.skills[0] %></p>
+              <p>90%</p>
+            </div>
+            <div class="border_line_3">
+              <div class="html_skills2"></div>
+            </div>
+            <div class="left_3_1">
+              <p><%=user.skills[1] %></p>
+              <p>85%</p>
+            </div>
+            <div class="border_line_2">
+              <div class="html_skills"></div>
+            </div>
+            <div class="left_3_1">
+              <p><%=user.skills[2] %></p>
+              <p>80%</p>
+            </div>
+            <div class="border_line_3">
+              <div class="html_skills2"></div>
+            </div>
+            <div class="left_3_1">
+              <p><%=user.skills[3] %></p>
+              <p>75%</p>
+            </div>
+            <div class="border_line_3">
+              <div class="html_skills2"></div>
+            </div>
+            <div class="left_3_1">
+              <p><%=user.skills[4] %></p>
+              <p>85%</p>
+            </div>
+            <div class="border_line_3">
+              <div class="html_skills2"></div>
+            </div>
+          </div>
+          <!-- END SKILLS -->
+          <div class="marginer"></div>
+          <!-- EXTRA SKILLS -->
+          <div class="left_5">
+            <p class="left_3_title">Extra Skills</p>
+            <div class="left_5_1">
+              <img class="left_5_1_box" src="icon/box_icon.svg" alt="" />
+              <p><%=user.extra_skills[0] %></p>
+            </div>
+            <div class="left_5_1">
+              <img class="left_5_1_box" src="icon/box_icon.svg" alt="" />
+              <p><%=user.extra_skills[1] %></p>
+            </div>
+            <div class="left_5_1">
+              <img class="left_5_1_box" src="icon/box_icon.svg" alt="" />
+              <p><%=user.extra_skills[2] %></p>
+            </div>
+            <div class="left_5_1">
+              <img class="left_5_1_box" src="icon/box_icon.svg" alt="" />
+              <p><%=user.extra_skills[3] %></p>
+            </div>
+          </div>
+          <!-- END EXTRA SKILLS -->
+          <div class="marginer"></div>
+        </div>
+        <div class="midd_frame">
+          <div class="midd_top_div">
+            <div class="mid_top_left">
+              <h1 class="midd_title">
+                Doctor neurologists <br />
+                in OHSU Hospital
+              </h1>
+              <p class="lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.
+              </p>
+              <button class="btn">Hire me</button>
+            </div>
+            <div class="mid_top_right">
+              <img src="images/Steve.png" alt="" />
+            </div>
+            <div class="circle_1"></div>
+            <div class="circle_2"></div>
+            <div class="circle_3"></div>
+            <div class="circle_4"></div>
+            <div class="triangle"></div>
+            <div class="square_1"></div>
+            <div class="square_2"></div>
+          </div>
+          <div class="mid_bottom">
+            <p class="my_services">My Services</p>
+            <p class="my_services_desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. lorem
+              ipsum
+            </p>
+          </div>
+        </div>
+        <div class="right_frame"></div>
+      </div>
+    </div>
+  </body>
+</html>
