@@ -8,9 +8,7 @@ const connectionString =
 "mongodb+srv://mike0727:mike0727%40%40@cluster0.ckgaiem.mongodb.net/Reja";
   
 
-mongodb.connect(
-  connectionString,
-  {
+mongodb.connect(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
