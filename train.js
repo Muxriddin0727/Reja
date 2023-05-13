@@ -54,7 +54,7 @@ else if (a > 40 && a <= 50) callback(null, list[3]);
 
 // call viathen/catch
 // console.log("passed here 0");
-// maslahatBering(20)
+// maslahatBering(a20)
 // .then(data => {
 //    console.log("javob:", data);
 //}).catch(err => {
