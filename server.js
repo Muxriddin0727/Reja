@@ -4,12 +4,12 @@ const http = require("http");
 const mongodb = require("mongodb");
 
 let db;
-const connectionSting =
+const connectionString =
 "mongodb+srv://mike0727:mike0727%40%40@cluster0.ckgaiem.mongodb.net/Reja";
   
 
 mongodb.connect(
-  connectionSting,
+  connectionString,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
