@@ -1,5 +1,6 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const fs = require("fs");
 
@@ -30,12 +31,35 @@ app.set("view engine", "ejs");
 
 //4 Routing code
 
-app.get("/create-item", function (req, res) {
-   //to do
+app.post("/create-item", function (req, res) {
+  console.log("user entered /create-item");
+  const new_reja = req.body.reja;
+  db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    console.log(data.ops);
+    res.json(data.ops[0]);
+  });
+});
+app.get("/author",function (req, res) {
+    res.render("author", { user: user});
   });
 
-app.get("/author", function (req, res) {
-    res.render("author", { user: user });
+  app.get("/", function (req, res) {
+    res.render("reja");
+  });
+
+  app.get("/", function (req, res) {
+    console.log("user entered /");
+    db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if(err) {
+        console.log(err);
+        res.end("something went wrong");
+      } else {
+        console.log(data);
+        res.render("reja", { items: data });
+      }
+    });
   });
 
 //app.get("/hello", function (req, res) {
@@ -46,9 +70,9 @@ app.get("/author", function (req, res) {
  //   res.end(`<h1 style="background: red">Siz sovgalar sahifasidasiz</h1>`);
 //});
 
-app.get("/", function (req, res) {
-  res.render("reja");
-});
+//app.get("/", function (req, res) {
+  //res.render("reja");
+//});
 
 module.exports = app;
 
