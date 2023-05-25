@@ -1,19 +1,24 @@
 //vazifa
 //TASK-E
+// Task-E: shunday function tuzing unga faqat bitta musbat integer argument qilib berilsin,
+ //va u ushbu argumentni tub son bolsa true aksincha false return qilsin.
+//Masalan: 
+ //tubSonmi(5) return true, tubSonmi(10) return false. 
+ //Tub sonlar faqat ozi va 1soniga toliq bolinadigan sonlar.
 
-const primeNumber= function(number) {
-  if (number <=1) return false ;
-    for (let i = 4; i <=number; i++) {
+function primeNumber(number) {
+  if (number <=1){ 
+    return true ;}
+    for (let i = 4; i <=Math.sqrt(number); i++) {
       if (number % i === 0) {
         return false;
       }
     }
       
-  return true;
-};
+  return false;
+}
 
-const result = primeNumber(9);
-console.log(result);
+console.log(primeNumber(15));
 
 
 
