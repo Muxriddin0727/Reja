@@ -41,5 +41,23 @@
       "33$"
     ],
     "famous_words": ["World is Beautiful with Flowers"],
-    "famous_name": ["Muxriddin Holiqov"]
+    "famous_name": ["Muxriddin Holiqov"],
+    "service_types": [
+      "Web Development",
+      "UI/UX Design",
+      "Sound Design",
+      "Game Design",
+      "Photography",
+      "Advertising"
+    ],
+
+   
+    "service_type_desc": [
+      "Blog, E-Commerce",
+      "Mobile App, Website Design",
+      "Voice Over, Beat Making",
+      "Character Design, Props & Objects",
+      "Portrait, Product Photography"
+    ]
+  
   }
